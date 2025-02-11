@@ -1,0 +1,88 @@
+1. Project Overview
+
+Purpose: Briefly describe the project's main objective.
+Tech Stack: List the primary technologies used (e.g., Python, Django, React).
+2. Coding Standards
+
+Python:
+Follow PEP 8 guidelines.
+Use type hints where appropriate.
+Django:
+Organize apps logically; avoid monolithic structures.
+Use Django's ORM; minimize raw SQL usage.
+React:
+Use functional components and React hooks.
+Maintain a clear folder structure for components.
+3. AI Interaction Guidelines
+
+Provide concise prompts; avoid unnecessary context.
+Specify the desired output format (e.g., function, class).
+Indicate any constraints or requirements explicitly.
+4. Common Pitfalls to Avoid
+
+Avoid using deprecated libraries or methods.
+Ensure compatibility with the project's existing codebase.
+Prevent security vulnerabilities, such as SQL injection.
+5. Testing and Validation
+
+Write unit tests for new features.
+Use continuous integration tools to automate testing.
+Regularly review and refactor code to maintain quality.
+6. Deployment Considerations
+
+Ensure code is optimized for production environments.
+Use environment variables for configuration settings.
+Monitor application performance post-deployment.
+7. Documentation
+
+Comment code where necessary to explain complex logic.
+Maintain an updated README with setup instructions.
+Document any deviations from standard practices.
+8. Continuous Improvement
+
+Encourage team members to suggest improvements.
+Regularly update the .cursorrules file as the project evolves.
+Stay informed about updates in the technologies used.
+
+9. Pulling from V0.dev, Pushing to GitHub, and Deploying to Vercel
+STEP by STEP to connect Github, Cursor, Vercel, V0.dev
+
+1) V0.dev to Cursor
+a) Get V0.dev link to codebase
+it looks like this:
+npx shadcn@latest add "https://v0.dev/chat/b/your-project-id?token=your-token"
+
+2) Cursor Desktop to Github:
+
+a) Clone the Repository(the first time before the repository is named and exists):
+git clone https://github.com/gSimani/your-repo.git
+
+b) Set Up Remote Origin:
+git remote add origin https://github.com/gSimani/your-repo.git
+
+3) Pushing and committing to Github from Cursor:
+
+a) Initialize Git (if not already done)
+git init
+
+b) Add and Commit Changes:
+git add
+
+c) git commit -m "Integrate V0.dev generated code"
+
+d) Push to GitHub:
+git push origin main
+
+4) Cursor Desktop to Vercel:
+a) npm install -g vercel
+b) cd /path/to/your/project
+c) vercel
+
+
+5) Connect Cursor Desktop code to Local Server:
+
+a) cd to the directory that the 'package.json' file is directly under...e.g. GUITAR/guitar/package.json so the directory to be in is Guy and Mike/GUITAR/guitar>npm run dev  
+
+press enter and then post the local server address in a webrowser e.g. localhost:3000
+
+
